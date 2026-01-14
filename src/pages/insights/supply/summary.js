@@ -980,7 +980,7 @@ function PageContent() {
           {/* Treasury Withdrawals List */}
           {filteredWithdrawals.length > 0 && (
             <div style={{ marginTop: '2rem' }}>
-              <Heading as="h3">Treasury Withdrawals in Selected Range</Heading>
+              <Divider text="Treasury Withdrawals in Selected Range" id="treasury-withdrawals" />
               <p style={{ marginBottom: '1rem' }}>
                 Between Epoch <strong>{startEpoch}</strong> ({getEpochDate(startEpoch)}) and Epoch <strong>{endEpoch}</strong> ({getEpochDate(endEpoch)}),{' '}
                 <strong>{filteredWithdrawals.length}</strong> Treasury Withdrawal{filteredWithdrawals.length !== 1 ? 's were' : ' was'} enacted and{' '}
@@ -1006,7 +1006,7 @@ function PageContent() {
                         <td style={{ padding: '0.75rem', textAlign: 'right' }}>{convertLovelacesToAda(w.amount).toLocaleString()}</td>
                         <td style={{ padding: '0.75rem', textAlign: 'center' }}>
                           <a
-                            href={`https://explorer.cardano.org/governance-action/${w.proposal_id}%23${w.proposal_index}`}
+                            href={`https://explorer.cardano.org/governance-action/${w.proposal_id}`}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
