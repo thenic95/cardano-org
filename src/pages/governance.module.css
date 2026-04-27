@@ -76,6 +76,204 @@
   margin: 0 auto;
 }
 
+.nclSection {
+  margin: 0 auto 3rem;
+  max-width: 1100px;
+}
+
+.nclIntro {
+  max-width: 820px;
+  margin-bottom: 1.25rem;
+}
+
+.nclEyebrow,
+.nclPanelLabel {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.nclIntro h2 {
+  margin: 0 0 0.65rem;
+  font-size: 2rem;
+}
+
+.nclMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.92rem;
+}
+
+.nclMeta a {
+  font-weight: 700;
+}
+
+.nclPanel {
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color, #fff);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nclProgressHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.nclProgressHeader strong {
+  display: block;
+  font-size: 2.15rem;
+  line-height: 1;
+}
+
+.nclProgressHeader > span {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.nclProgressTrack {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.nclProgressTrack span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #008a7a 0%, #0033ad 100%);
+  transition: width 0.3s ease;
+}
+
+.nclStatsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.nclStatCard {
+  min-width: 0;
+  padding: 0.9rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: rgba(0, 51, 173, 0.035);
+}
+
+.nclStatValue {
+  display: block;
+  color: var(--ifm-heading-color);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.nclStatLabel,
+.nclStatDetail {
+  display: block;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.82rem;
+}
+
+.nclStatLabel {
+  margin-top: 0.35rem;
+  font-weight: 700;
+}
+
+.nclStatDetail {
+  margin-top: 0.2rem;
+}
+
+.nclFootnote {
+  margin: 1rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85rem;
+}
+
+.nclWithdrawals {
+  margin-top: 1rem;
+}
+
+.nclWithdrawals h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.nclWithdrawals ul {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nclWithdrawals li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color, #fff);
+}
+
+.nclWithdrawals li > span {
+  min-width: 0;
+}
+
+.nclWithdrawals strong,
+.nclWithdrawals small {
+  display: block;
+}
+
+.nclWithdrawals strong {
+  overflow-wrap: anywhere;
+}
+
+.nclWithdrawals small {
+  margin-top: 0.2rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.nclWithdrawals li > span:last-child {
+  flex-shrink: 0;
+  color: var(--ifm-heading-color);
+  font-weight: 800;
+  text-align: right;
+}
+
+.nclWithdrawals a {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+[data-theme='dark'] .nclPanel,
+[data-theme='dark'] .nclWithdrawals li {
+  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme='dark'] .nclStatCard {
+  border-color: var(--ifm-color-emphasis-300);
+  background: rgba(119, 161, 255, 0.08);
+}
+
 @media (max-width: 768px) {
   .rolesTriangle {
     grid-template-columns: 1fr;
@@ -115,6 +313,28 @@
     justify-self: center;
     height: 28px;
     margin: 0.4rem 0;
+  }
+
+  .nclProgressHeader,
+  .nclWithdrawals li {
+    flex-direction: column;
+  }
+
+  .nclProgressHeader > span,
+  .nclWithdrawals li > span:last-child {
+    text-align: left;
+  }
+
+  .nclStatsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nclIntro h2 {
+    font-size: 1.55rem;
+  }
+
+  .nclProgressHeader strong {
+    font-size: 1.7rem;
   }
 }
 

@@ -48,6 +48,10 @@
       {
         "term": "Governance Action",
         "description": "A Governance Action is an on-chain proposal for voting, triggered by a transaction, with an expiration period after which it can’t be enacted. Any ada holder can submit a Governance Action, and voters then submit voting transactions. CIP-1694 describes seven types of Governance Actions: Motion of no-confidence, New constitutional committee or Quorum size, Updates to Constitution, Hard-Fork Initiation, Protocol Parameter Changes, Treasury Withdrawals, and Info."
+      },
+      {
+        "term": "Net Change Limit",
+        "description": "The Net Change Limit is a constitutional guardrail that caps how much ada may be withdrawn from the Cardano treasury during a defined period. It is approved through governance and acts as a ceiling, not a spending target."
       }
     ],
     "cip": [

@@ -192,6 +192,9 @@ The [hard fork on March 1, 2021](/hardforks/) that introduced native tokens, all
 ### native token
 A token created and managed directly on the Cardano blockchain using its built-in token functionality, without requiring smart contracts. Introduced in the Mary hard fork.
 
+### Net Change Limit
+A constitutional guardrail that caps how much ada can be withdrawn from the Cardano treasury during a defined period. The Net Change Limit is approved through governance and acts as a ceiling, not a spending target.
+
 ### NFT
 Non-Fungible Token. A unique digital asset on the blockchain representing ownership of items like art, collectibles, or in-game assets.
 

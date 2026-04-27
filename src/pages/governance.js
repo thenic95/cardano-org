@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Head from "@docusaurus/Head";
+import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import SiteHero from "@site/src/components/Layout/SiteHero";
 import BackgroundWrapper from "@site/src/components/Layout/BackgroundWrapper";
 import Divider from "@site/src/components/Layout/Divider";
@@ -21,9 +23,35 @@ import OpenGraphInfo from "@site/src/components/Layout/OpenGraphInfo";
 import { useBaseUrlUtils } from "@docusaurus/useBaseUrl";
 import { FaUsers, FaServer, FaUniversity, FaShieldAlt, FaCompass } from "react-icons/fa";
 import {translate} from '@docusaurus/Translate';
+import { makeApiClient } from "@site/src/utils/insights/api";
+import { convertLovelacesToAda, sumWithdrawalAmounts } from "@site/src/utils/insights/numbers";
 import styles from "./governance.module.css";
 import governanceRoleSurvey from "@site/src/data/governanceRoleSurvey.json";
 import governanceFAQ from "@site/src/data/governanceFAQ.json";
+
+const confirmedNetChangeLimit = {
+  amountLovelace: 350_000_000_000_000,
+  startEpoch: 613,
+  startDate: "13 February 2026",
+  endEpoch: 713,
+  endDate: "3 July 2027",
+  governanceActionId: "gov_action1m3xx08yv788vfxqh6nfvrjtvmqpwezsy0ggaczctkyjmttc2wmxsq4jsr7q",
+  lastChecked: "26 April 2026",
+};
+
+function formatAda(value) {
+  if (value == null || Number.isNaN(Number(value))) return "...";
+  const ada = Number(value);
+  if (ada >= 1_000_000_000) return `${(ada / 1_000_000_000).toFixed(1)}B ada`;
+  if (ada >= 1_000_000) return `${(ada / 1_000_000).toFixed(1)}M ada`;
+  return `${Math.round(ada).toLocaleString()} ada`;
+}
+
+function formatPercent(value) {
+  if (value == null || Number.isNaN(Number(value))) return "...";
+  if (value < 0.1 && value > 0) return "<0.1%";
+  return `${value.toFixed(1)}%`;
+}
 
 function GovernanceHero() {
   return (
@@ -100,6 +128,237 @@ function GovernanceRolesSection() {
           {translate({id: 'governance.onboarding.together', message: 'Together, they represent, validate, and safeguard Cardano governance. No single group can make decisions alone.'})}
         </HighlightCallout>
       </div>
+    </>
+  );
+}
+
+function NclStat({ label, value, detail }) {
+  return (
+    <div className={styles.nclStatCard}>
+      <span className={styles.nclStatValue}>{value}</span>
+      <span className={styles.nclStatLabel}>{label}</span>
+      {detail && <span className={styles.nclStatDetail}>{detail}</span>}
+    </div>
+  );
+}
+
+function NetChangeLimitSection() {
+  const { siteConfig: { customFields } } = useDocusaurusContext();
+  const API_URL = customFields.CARDANO_ORG_API_URL;
+  const api = useMemo(() => (API_URL ? makeApiClient(API_URL) : null), [API_URL]);
+
+  const [currentEpoch, setCurrentEpoch] = useState(null);
+  const [withdrawals, setWithdrawals] = useState([]);
+  const [approvedWithdrawalCount, setApprovedWithdrawalCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(Boolean(API_URL));
+  const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    if (!api) return;
+    let cancelled = false;
+
+    async function fetchNclProgress() {
+      try {
+        const tipRes = await api.get("/tip");
+        const epochNo = tipRes.data?.[0]?.epoch_no;
+        if (cancelled) return;
+        setCurrentEpoch(epochNo);
+
+        const rangeEndEpoch = Math.min(epochNo || confirmedNetChangeLimit.startEpoch, confirmedNetChangeLimit.endEpoch);
+        if (!epochNo || rangeEndEpoch < confirmedNetChangeLimit.startEpoch) {
+          setWithdrawals([]);
+          setApprovedWithdrawalCount(0);
+          return;
+        }
+
+        const [withdrawalsRes, approvedWithdrawalsRes] = await Promise.all([
+          api.get(
+            `/proposal_list?proposal_type=eq.TreasuryWithdrawals&enacted_epoch=not.is.null&enacted_epoch=gte.${confirmedNetChangeLimit.startEpoch}&enacted_epoch=lte.${rangeEndEpoch}&order=enacted_epoch.desc&select=proposal_id,proposal_index,proposal_type,enacted_epoch,ratified_epoch,meta_json-%3Ebody-%3Etitle,withdrawal`
+          ),
+          api.get(
+            `/proposal_list?proposal_type=eq.TreasuryWithdrawals&ratified_epoch=not.is.null&ratified_epoch=gte.${confirmedNetChangeLimit.startEpoch}&ratified_epoch=lte.${rangeEndEpoch}&select=proposal_id`
+          ),
+        ]);
+
+        const withdrawalRows = (withdrawalsRes.data || [])
+          .map((item) => ({
+            amountLovelace: sumWithdrawalAmounts(item.withdrawal),
+            title: item.title || translate({ id: "governance.ncl.withdrawal.untitled", message: "Untitled withdrawal" }),
+            enactedEpoch: item.enacted_epoch,
+            proposalId: item.proposal_id,
+            proposalIndex: item.proposal_index,
+          }))
+          .filter((item) => item.amountLovelace > 0);
+
+        if (cancelled) return;
+        setWithdrawals(withdrawalRows);
+        setApprovedWithdrawalCount((approvedWithdrawalsRes.data || []).length);
+      } catch (err) {
+        if (cancelled) return;
+        console.error("NetChangeLimitSection: failed to fetch withdrawals", err);
+        setHasError(true);
+      } finally {
+        if (!cancelled) setIsLoading(false);
+      }
+    }
+
+    fetchNclProgress();
+    return () => {
+      cancelled = true;
+    };
+  }, [api]);
+
+  const nclAmountAda = convertLovelacesToAda(confirmedNetChangeLimit.amountLovelace);
+  const withdrawnLovelace = useMemo(
+    () => withdrawals.reduce((sum, item) => sum + item.amountLovelace, 0),
+    [withdrawals]
+  );
+  const withdrawnAda = convertLovelacesToAda(withdrawnLovelace);
+  const remainingAda = Math.max(0, nclAmountAda - withdrawnAda);
+  const usedPercent = nclAmountAda > 0 ? (withdrawnAda / nclAmountAda) * 100 : 0;
+  const rangeEndEpoch = currentEpoch
+    ? Math.min(currentEpoch, confirmedNetChangeLimit.endEpoch)
+    : confirmedNetChangeLimit.endEpoch;
+  const latestWithdrawals = withdrawals.slice(0, 3);
+  const governanceActionUrl = `https://explorer.cardano.org/governance-action/${confirmedNetChangeLimit.governanceActionId}`;
+  const dynamicDataUnavailable = hasError || !API_URL;
+  const dynamicValueFallback = isLoading || dynamicDataUnavailable;
+
+  return (
+    <>
+      <Divider text={translate({id: 'governance.divider.ncl', message: 'Treasury guardrails'})} id="net-change-limit" />
+      <SpacerBox size="small" />
+      <section className={styles.nclSection} aria-labelledby="net-change-limit-heading">
+        <div className={styles.nclIntro}>
+          <p className={styles.nclEyebrow}>
+            {translate({ id: "governance.ncl.eyebrow", message: "Last confirmed Net Change Limit" })}
+          </p>
+          <h2 id="net-change-limit-heading">
+            {translate({ id: "governance.ncl.title", message: "350M ada treasury withdrawal ceiling" })}
+          </h2>
+          <p className="black-text">
+            {translate({
+              id: "governance.ncl.description",
+              message: "The Net Change Limit is a constitutional guardrail that caps how much ada can be withdrawn from the Cardano treasury during a defined period. Unless superseded by a new NCL, withdrawals must stay within this approved limit.",
+            })}
+          </p>
+          <div className={styles.nclMeta}>
+            <span>
+              {translate(
+                { id: "governance.ncl.period", message: "Epoch {startEpoch}, {startDate} to epoch {endEpoch}, {endDate}" },
+                {
+                  startEpoch: confirmedNetChangeLimit.startEpoch,
+                  startDate: confirmedNetChangeLimit.startDate,
+                  endEpoch: confirmedNetChangeLimit.endEpoch,
+                  endDate: confirmedNetChangeLimit.endDate,
+                }
+              )}
+            </span>
+            <Link href={governanceActionUrl} target="_blank" rel="noopener noreferrer">
+              {translate({ id: "governance.ncl.source", message: "Approved governance action" })}
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.nclPanel}>
+          <div className={styles.nclProgressHeader}>
+            <div>
+              <span className={styles.nclPanelLabel}>
+                {translate({ id: "governance.ncl.progress.label", message: "NCL used" })}
+              </span>
+              <strong>{dynamicValueFallback ? "..." : formatPercent(usedPercent)}</strong>
+            </div>
+            <span>
+              {currentEpoch
+                ? translate(
+                    { id: "governance.ncl.progress.epoch", message: "Through epoch {epoch}" },
+                    { epoch: rangeEndEpoch }
+                  )
+                : translate({ id: "governance.ncl.progress.epochFallback", message: "Latest available data" })}
+            </span>
+          </div>
+          <div className={styles.nclProgressTrack} aria-hidden="true">
+            <span style={{ width: `${Math.min(100, Math.max(0, usedPercent))}%` }} />
+          </div>
+
+          <div className={styles.nclStatsGrid}>
+            <NclStat
+              label={translate({ id: "governance.ncl.stat.limit", message: "NCL limit" })}
+              value={formatAda(nclAmountAda)}
+              detail={translate({ id: "governance.ncl.stat.limitDetail", message: "350,000,000,000,000 lovelace" })}
+            />
+            <NclStat
+              label={translate({ id: "governance.ncl.stat.withdrawn", message: "Withdrawn so far" })}
+              value={dynamicValueFallback ? "..." : formatAda(withdrawnAda)}
+              detail={dynamicDataUnavailable ? translate({ id: "governance.ncl.stat.unavailable", message: "Data unavailable" }) : null}
+            />
+            <NclStat
+              label={translate({ id: "governance.ncl.stat.remaining", message: "Remaining" })}
+              value={dynamicValueFallback ? "..." : formatAda(remainingAda)}
+            />
+            <NclStat
+              label={translate({ id: "governance.ncl.stat.count", message: "Withdrawals approved" })}
+              value={dynamicValueFallback ? "..." : approvedWithdrawalCount.toLocaleString()}
+              detail={
+                dynamicValueFallback
+                  ? null
+                  : translate(
+                      { id: "governance.ncl.stat.enactedDetail", message: "{count} enacted" },
+                      { count: withdrawals.length.toLocaleString() }
+                    )
+              }
+            />
+          </div>
+
+          <p className={styles.nclFootnote}>
+            {translate(
+              {
+                id: "governance.ncl.footnote",
+                message: "NCL usage is calculated from enacted Treasury Withdrawals between epochs {startEpoch} and {endEpoch}. Approved withdrawal count uses ratified Treasury Withdrawals in the same period. Confirmed NCL last checked manually: {lastChecked}.",
+              },
+              {
+                startEpoch: confirmedNetChangeLimit.startEpoch,
+                endEpoch: rangeEndEpoch,
+                lastChecked: confirmedNetChangeLimit.lastChecked,
+              }
+            )}
+          </p>
+        </div>
+
+        {latestWithdrawals.length > 0 && (
+          <div className={styles.nclWithdrawals}>
+            <h3>{translate({ id: "governance.ncl.withdrawals.title", message: "Latest enacted withdrawals" })}</h3>
+            <ul>
+              {latestWithdrawals.map((withdrawal, index) => {
+                const withdrawalUrl = withdrawal.proposalId
+                  ? `https://explorer.cardano.org/governance-action/${withdrawal.proposalId}`
+                  : null;
+                return (
+                  <li key={`${withdrawal.proposalId || withdrawal.enactedEpoch}-${withdrawal.proposalIndex || index}`}>
+                    <span>
+                      <strong>{withdrawal.title}</strong>
+                      <small>
+                        {translate(
+                          { id: "governance.ncl.withdrawals.epoch", message: "Epoch {epoch}" },
+                          { epoch: withdrawal.enactedEpoch }
+                        )}
+                      </small>
+                    </span>
+                    <span>
+                      {formatAda(convertLovelacesToAda(withdrawal.amountLovelace))}
+                      {withdrawalUrl && (
+                        <Link href={withdrawalUrl} target="_blank" rel="noopener noreferrer">
+                          {translate({ id: "governance.ncl.withdrawals.view", message: "View" })}
+                        </Link>
+                      )}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+      </section>
     </>
   );
 }
@@ -244,6 +503,7 @@ export default function Governance() {
         <BackgroundWrapper backgroundType={"zoom"}>
           <BoundaryBox>
             <GovernancePulse />
+            <NetChangeLimitSection />
             <GovernanceRolesSection />
             <SpacerBox size="small" />
           </BoundaryBox>

@@ -69,5 +69,13 @@
       "A governance action is an on-chain proposal that can change how Cardano works. There are several types, including protocol parameter changes, hard fork initiations, treasury withdrawals, and constitutional amendments. Each type requires different approval thresholds from DReps, SPOs, and the Constitutional Committee."
     ],
     "category": "governance-basics"
+  },
+  {
+    "question": "What is the Net Change Limit?",
+    "answer": [
+      "The Net Change Limit is a constitutional guardrail that caps how much ada can be withdrawn from the Cardano treasury during a defined period. It helps keep treasury withdrawals predictable and ensures spending stays within the limit approved through governance.",
+      "The NCL is a ceiling, not a spending target. Treasury withdrawals still need their own governance approval and must remain within the active NCL."
+    ],
+    "category": "governance-basics"
   }
 ]

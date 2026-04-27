@@ -194,7 +194,7 @@
   },
   {
     "title": "Net Change Limit",
-    "description": "An action that has no effect on-chain, other than an on-chain record.",
+    "description": "A governance action that establishes the maximum amount of ada that may be withdrawn from the Cardano treasury during a defined period.",
     "graphData": {
       "nodes": [
         {
