@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <g fill="#FF5553">
+    <circle cx="15" cy="15" r="2.5"/>
+    <circle cx="25" cy="15" r="2.5"/>
+    <circle cx="35" cy="15" r="2.5"/>
+    <circle cx="45" cy="15" r="2.5"/>
+    <circle cx="55" cy="15" r="2.5"/>
+    <circle cx="65" cy="15" r="2.5"/>
+    <circle cx="95" cy="15" r="2.5"/>
+    <circle cx="105" cy="15" r="2.5"/>
+    <circle cx="15" cy="25" r="2.5"/>
+    <circle cx="25" cy="25" r="2.5"/>
+    <circle cx="35" cy="25" r="2.5"/>
+    <circle cx="45" cy="25" r="2.5"/>
+    <circle cx="55" cy="25" r="2.5"/>
+    <circle cx="95" cy="25" r="2.5"/>
+    <circle cx="105" cy="25" r="2.5"/>
+    <circle cx="15" cy="35" r="2.5"/>
+    <circle cx="25" cy="35" r="2.5"/>
+    <circle cx="35" cy="35" r="2.5"/>
+    <circle cx="45" cy="35" r="2.5"/>
+    <circle cx="105" cy="35" r="2.5"/>
+    <circle cx="15" cy="45" r="2.5"/>
+    <circle cx="25" cy="45" r="2.5"/>
+    <circle cx="35" cy="45" r="2.5"/>
+    <circle cx="105" cy="45" r="2.5"/>
+    <circle cx="15" cy="55" r="2.5"/>
+    <circle cx="25" cy="55" r="2.5"/>
+    <circle cx="95" cy="55" r="2.5"/>
+    <circle cx="105" cy="55" r="2.5"/>
+    <circle cx="15" cy="65" r="2.5"/>
+    <circle cx="85" cy="65" r="2.5"/>
+    <circle cx="95" cy="65" r="2.5"/>
+    <circle cx="105" cy="65" r="2.5"/>
+    <circle cx="15" cy="75" r="2.5"/>
+    <circle cx="75" cy="75" r="2.5"/>
+    <circle cx="85" cy="75" r="2.5"/>
+    <circle cx="95" cy="75" r="2.5"/>
+    <circle cx="105" cy="75" r="2.5"/>
+    <circle cx="15" cy="85" r="2.5"/>
+    <circle cx="25" cy="85" r="2.5"/>
+    <circle cx="65" cy="85" r="2.5"/>
+    <circle cx="75" cy="85" r="2.5"/>
+    <circle cx="85" cy="85" r="2.5"/>
+    <circle cx="95" cy="85" r="2.5"/>
+    <circle cx="105" cy="85" r="2.5"/>
+    <circle cx="15" cy="95" r="2.5"/>
+    <circle cx="25" cy="95" r="2.5"/>
+    <circle cx="55" cy="95" r="2.5"/>
+    <circle cx="65" cy="95" r="2.5"/>
+    <circle cx="75" cy="95" r="2.5"/>
+    <circle cx="85" cy="95" r="2.5"/>
+    <circle cx="95" cy="95" r="2.5"/>
+    <circle cx="105" cy="95" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#0033AD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="35" y1="65" x2="25" y2="75"/>
+    <line x1="75" y1="25" x2="85" y2="15"/>
+    <line x1="45" y1="55" x2="65" y2="35"/>
+    <polygon points="25,65 45,45 55,55 35,75"/>
+    <polygon points="55,35 75,15 85,25 65,45"/>
+    <line x1="45" y1="85" x2="34.58" y2="95.37"/>
+    <line x1="54.58" y1="75.37" x2="75" y2="54.95"/>
+    <polygon points="34.58,85 45,95.37 65,75 55,65"/>
+    <polygon points="65,54.95 75,65 95,45 85,35"/>
+    <line x1="85" y1="45" x2="95" y2="35"/>
+  </g>
+</svg>

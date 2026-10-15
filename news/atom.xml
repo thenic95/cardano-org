@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://thenic95.github.io/cardano-org/news/</id>
+    <title>Cardano Blog</title>
+    <updated>2026-10-08T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://thenic95.github.io/cardano-org/news/"/>
+    <subtitle>Cardano Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Cardano Foundation's .ada bid advances in ICANN's New gTLD Program]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-10-08-ada-icann-next-stage/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-10-08-ada-icann-next-stage/"/>
+        <updated>2026-10-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The application cleared Reveal Day and now faces technical, financial, and operational evaluation, with delegation of new top-level domains expected between 2028 and 2030.]]></summary>
+        <content type="html"><![CDATA[<p>The .ada application joins .sol, .ethereum, .btc, and .bitcoin among Web3 bids in ICANN's first new gTLD round since 2012, after a Cardano governance action passed with roughly 75% support. If approved, .ada could support simplified wallet addresses, integration with decentralized identity such as Veridian, and domain tokenization.</p>
+<div style="text-align:right"><p><a href="https://cardanofoundation.org/blog/ada-icann-next-stage" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="cardano foundation ada top-level domain banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-0978726487e393b7afb35903cdf6f96f.webp" width="2260" height="1180" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Foundation</name>
+            <uri>https://cardanofoundation.org</uri>
+        </author>
+        <category label="Ecosystem" term="Ecosystem"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Open Wallet Standard adds Cardano support in v1.4.3]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-10-08-open-wallet-standard-adds-cardano-support/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-10-08-open-wallet-standard-adds-cardano-support/"/>
+        <updated>2026-10-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[WingRiders built the integration with IOG and the Midnight Foundation, handling Cardano's separate payment and stake keys, transaction signing, and Koios balance lookups.]]></summary>
+        <content type="html"><![CDATA[<p>Applications and AI agents keep wallets on the machine they run on and sign through one interface across Ethereum, Solana, Bitcoin, and now Cardano. Each agent can get its own access key with policies OWS evaluates before signing, and the integration extends the signer to derive payment and stake keys separately under CIP-1852.</p>
+<div style="text-align:right"><p><a href="https://www.iog.io/news/open-wallet-standard-adds-cardano-support" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="open wallet standard adds cardano support banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-474e6e89ecdd37cf4ffc97f1733cb348.png" width="1200" height="630" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Input Output Global</name>
+            <uri>https://iohk.io</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CIP-0113 programmable tokens go live on Cardano mainnet]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-10-07-programmable-tokens-cardano-mainnet/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-10-07-programmable-tokens-cardano-mainnet/"/>
+        <updated>2026-10-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Issuers of stablecoins, funds, and bonds can build KYC, sanctions, freeze, and transfer rules into native tokens that the ledger enforces on every transfer.]]></summary>
+        <content type="html"><![CDATA[<p>Programmable tokens stay native Cardano assets built on the EUTXO model, so wallets, explorers, and applications handle them like any other token while compliance logic travels with the asset and execution costs stay predictable. The standard launches with support from Eternl, GeroWallet, CardanoScan, and BloxBean, and CMTA recognizes CIP-113 as a smart contract equivalent to the CMTAT for its certification scheme.</p>
+<div style="text-align:right"><p><a href="https://cardanofoundation.org/blog/programmable-tokens-cardano-mainnet" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="programmable tokens now on mainnet banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-babf6c255ebe22f51ee5aabbae60638f.webp" width="1920" height="1080" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Foundation</name>
+            <uri>https://cardanofoundation.org</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leios block headers become protocol-specific as Lace 2.4 adds RealFi]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-10-02-weekly-development-report/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-10-02-weekly-development-report/"/>
+        <updated>2026-10-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Header interfaces can now be defined era by era, BLS keys expire after KES expiry, and the wallet bundles RealFi's USDrf and sUSDrf tokens.]]></summary>
+        <content type="html"><![CDATA[<p>The Leios committee is selected at the epoch boundary, Plutus scripts can now see the sub-transaction index, and Dijkstra gains protocol parameters for reference-input costs. Node 11.1.1 benchmarks keep the CPU gains of 11.1.0, the Leios transaction benchmark runs standalone for SPOs without nix or a Haskell toolchain, and Hydra reports BacklogFull only when its backlog would take too long to clear.</p>
+<div style="text-align:right"><p><a href="https://www.essentialcardano.io/development-update/weekly-development-report-2026-10-02" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="weekly development report banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-c1e32ff8433822597e4a0fda4642d6ed.png" width="1008" height="540" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Input Output Global</name>
+            <uri>https://iohk.io</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Node 11.1.3 becomes the recommended SPO release as CAP-12 opens for review]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-10-02-intersect-weekly-update/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-10-02-intersect-weekly-update/"/>
+        <updated>2026-10-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Every SPO should run 11.1.2 or later, the first constitutional amendment for the hard fork adds the new Dijkstra parameters, and treasury withdrawals moved into USDM.]]></summary>
+        <content type="html"><![CDATA[<p>Cardano node 11.1.3 corrects an IPv4 decoding issue introduced in 11.1.2, and 11.2 is expected to carry the new block format and Plutus V4 context without Leios once its pre-release lands. CAP-12 adds every new Dijkstra protocol parameter to the Constitution in three steps, with guardrails and an SPO vote for security-critical settings, and the technical steering committee is recruiting two funded CIP editors.</p>
+<div style="text-align:right"><p><a href="https://www.intersectmbo.org/news/intersect-weekly-update-131-oct-2-2026" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="intersect weekly update banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-89dea78b8a1d506303e70f476329f4d0.png" width="1920" height="1080" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Intersect</name>
+            <uri>https://www.intersectmbo.org</uri>
+        </author>
+        <category label="Governance" term="Governance"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Petrobras traces aviation fuel and renewable diesel claims on Cardano]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-30-renewable-fuel-traceability-petrobras/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-30-renewable-fuel-traceability-petrobras/"/>
+        <updated>2026-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Book-and-Claim model ties aviation fuel certificates to verifiable claims, and production, transport, and use checkpoints cover renewable diesel, both with PUC-Rio's Ledger Labs.]]></summary>
+        <content type="html"><![CDATA[<p>Cardano provides the traceable record behind the SAF Book-and-Claim model, showing where an environmental benefit originated, who it was assigned to, and that it has been claimed only once, with travelers able to calculate their route's CS-SAF amount and receive a certificate. The Diesel R application converts information from each production, transport, and use stage into a continuous record that can support Scope 3 emissions reporting.</p>
+<div style="text-align:right"><p><a href="https://cardanofoundation.org/blog/renewable-fuel-traceability-petrobras" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="cardano foundation renewable fuel traceability banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-b79bf40fc345faa07981f3f349dcb536.webp" width="2260" height="1180" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Foundation</name>
+            <uri>https://cardanofoundation.org</uri>
+        </author>
+        <category label="Ecosystem" term="Ecosystem"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CIP-113 programmable tokens merge into the main CIP repository]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-30-community-digest/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-30-community-digest/"/>
+        <updated>2026-09-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Programmable tokens carrying on-chain transfer rules clear their final review, node 11.1.3 fixes IPv4 decoding, and Cardano marks nine years since genesis.]]></summary>
+        <content type="html"><![CDATA[<p>Transfer rules such as allowlists, freezes, and jurisdiction limits can now live inside the asset itself, after CIP-113 was merged into Cardano's main CIP repository. Cardano marked nine years since its genesis block with 2,890 stake pools, 123.98 million transactions, and 158 governance actions, while Intersect shipped node 11.1.3 to fix IPv4 address decoding. The Foundation also detailed a UCLA Anderson partnership.</p>
+<div style="text-align:right"><p><a href="https://forum.cardano.org/t/digest-september-30-9-years-of-cardano-cip-113-programmable-tokens-merged-into-the-cip-repo-cardano-node-update-token2049-singapore-developer-spotlight-ecosystem-governance-updates/157100" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="community digest banner" src="https://thenic95.github.io/cardano-org/assets/images/community-digest-41f97e3c915b5f9b525b290d35642767.png" width="1600" height="900" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Community</name>
+            <uri>https://www.youtube.com/c/CardanoCommunity</uri>
+        </author>
+        <category label="Community" term="Community"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cardano Academy content joins UCLA Anderson blockchain coursework]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-28-ucla-partnership/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-28-ucla-partnership/"/>
+        <updated>2026-09-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The multi-year partnership places Cardano education in UCLA classes from 2027, adds five sponsored fellowships for early-stage companies, and includes a Web3 masterclass with sponsored certification.]]></summary>
+        <content type="html"><![CDATA[<p>Cardano Academy material and use cases enter UCLA's blockchain coursework, including Blockchain Cryptocurrency Applications in Business and Finance, from 2027. The agreement also sponsors five fellowships for early-stage companies in the UCLA Accelerate program and covers the Foundation's sponsorship of the 2027 Draper Innovation Showcase, extending education work already running with the University of Zurich, the University of Brasília, and PUC-Rio.</p>
+<div style="text-align:right"><p><a href="https://cardanofoundation.org/blog/ucla-partnership" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="cardano foundation and ucla anderson venture accelerator banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-add1d615bb710d42cb2f66029e8b16f5.png" width="2260" height="1180" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Foundation</name>
+            <uri>https://cardanofoundation.org</uri>
+        </author>
+        <category label="Ecosystem" term="Ecosystem"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Node 11.2 lines up Dijkstra as the CAP Portal opens wallet connect]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-26-intersect-weekly-update/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-26-intersect-weekly-update/"/>
+        <updated>2026-09-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dijkstra's block format and Plutus V4 context are expected in 11.2 without Leios, the Board Election drew 139 votes, and Cardano native tokens reach Fireblocks.]]></summary>
+        <content type="html"><![CDATA[<p>Cardano Node 11.2 should carry the new block format and Plutus V4 context but not Leios, and it is not a hard fork-ready release, so tooling teams are asked to assess breaking APIs early. The Parameter Committee is reviewing roughly 100 new Dijkstra guardrails plus about 50 for Peras, wallet vendors are being briefed on BLS key changes, and the Civics Committee rebuilt its knowledge base around six completed objectives.</p>
+<div style="text-align:right"><p><a href="https://www.intersectmbo.org/news/intersect-weekly-update-130-sep-2-20266" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="intersect weekly update banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-e0cde590ac0ccd553f61622f088a8ed9.png" width="1920" height="1080" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Intersect</name>
+            <uri>https://www.intersectmbo.org</uri>
+        </author>
+        <category label="Governance" term="Governance"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leios prototype database splits into rollback and settled files]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-25-weekly-development-report/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-25-weekly-development-report/"/>
+        <updated>2026-09-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Endorser Blocks move to the settled file in the background, Lace 2.3 reworks staking and DRep browsing, and Hydra fixes a Mesh SDK deposit lockout.]]></summary>
+        <content type="html"><![CDATA[<p>Certified Endorser Blocks move from the rollback file to the settled one in the background, so each database file can live on its own disk, and garbage collection marks rows before deleting them in batches instead of blocking the node. Lace 2.3 shipped reworked staking and DRep browsers with broader hardware wallet support, Hydra fixed a Mesh SDK deposit lockout and replaced 13 slow end-to-end tests with 30 unit tests, and Plutus closed out its September milestones.</p>
+<div style="text-align:right"><p><a href="https://www.essentialcardano.io/development-update/weekly-development-report-2026-09-25" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="weekly development report banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-6391610d709a057c334c4be9d0f86cf9.png" width="1008" height="540" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Input Output Global</name>
+            <uri>https://iohk.io</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fireblocks to add full support for Cardano native tokens]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-24-fireblocks-cardano-native-tokens/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-24-fireblocks-cardano-native-tokens/"/>
+        <updated>2026-09-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fireblocks clients can custody, send, and receive Cardano native tokens under the same policy controls as other assets, with support expected by March 2027.]]></summary>
+        <content type="html"><![CDATA[<p>Tokens that use the Cardano Token Registry (CIP-26) and the on-chain metadata standard (CIP-68) become standard assets on Fireblocks, where they previously required manual steps. Fireblocks has supported ada since 2021, and support for the tokens is expected by March 2027 across its bank, exchange, payment, and fintech clients.</p>
+<div style="text-align:right"><p><a href="https://cardanofoundation.org/blog/fireblocks-cardano-native-tokens" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="fireblocks cardano native tokens banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-f4c55185359b5131d60ed61b24248c63.png" width="2260" height="1180" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Foundation</name>
+            <uri>https://cardanofoundation.org</uri>
+        </author>
+        <category label="Ecosystem" term="Ecosystem"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cardano Accelerator Program announces fall 2026 cohort for verification and identity]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-21-cap-fall-2026-cohort/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-21-cap-fall-2026-cohort/"/>
+        <updated>2026-09-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Cardano Foundation announced eight ventures for the CAP Fall 2026 cohort, building digital product passports, traceability, and identity infrastructure.]]></summary>
+        <content type="html"><![CDATA[<p>The Cardano Foundation announced eight ventures for the Cardano Accelerator Program Fall 2026 cohort. Five ventures joined the Core track and three the Spotlight track, focusing on digital product passports, supply chain traceability, verified identity, and responsible AI oracles. Each team receives a CHF 10,000 contribution and prepares for a February 2027 Demo Day.</p>
+<div style="text-align:right"><p><a href="https://cardanofoundation.org/blog/cap-fall-2026-cohort" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="cap fall 2026 cohort banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-43ea10387f6c59b521065e78cf35262e.png" width="2260" height="1180" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Foundation</name>
+            <uri>https://cardanofoundation.org</uri>
+        </author>
+        <category label="Ecosystem" term="Ecosystem"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cardano node 11.1.2 releases as Go node validates mainnet blocks]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-19-intersect-weekly-update/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-19-intersect-weekly-update/"/>
+        <updated>2026-09-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Intersect released cardano-node 11.1.2 for SPOs, the Go node validated mainnet blocks, and the Board Election enters its final week.]]></summary>
+        <content type="html"><![CDATA[<p>Intersect released cardano-node 11.1.2, which supersedes 11.1.1 and asks SPOs to prioritize the upgrade alongside mithril-signer 1.1.9. The Dingo Go node validated mainnet blocks, a milestone for node diversity, while the Board Election entered its final week with eleven candidates competing for two seats. The Constitutional Amendment Portal holds seven proposals in consultation, and three governance actions remain live, including the OpenZeppelin Stack treasury withdrawal and the minPoolCost parameter change.</p>
+<div style="text-align:right"><p><a href="https://www.intersectmbo.org/news/intersect-weekly-update-129-sep-19-2026" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="intersect weekly update banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-2afaea8687e183365364767cbe3c4e17.png" width="1920" height="1080" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Intersect</name>
+            <uri>https://www.intersectmbo.org</uri>
+        </author>
+        <category label="Governance" term="Governance"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dijkstra batch validation runs Plutus scripts as Hydra closes fanout wedge]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-18-weekly-development-report/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-18-weekly-development-report/"/>
+        <updated>2026-09-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dijkstra batch validation runs Plutus scripts for sub-transactions and counts execution budgets, while Hydra closes a fanout wedge and ships stability fixes.]]></summary>
+        <content type="html"><![CDATA[<p>Dijkstra batch validation was implemented so Plutus scripts for sub-transactions now run and their execution budgets count toward block and fee limits, closing a gap where validators and minting policies went unchecked. Withdrawals handling was reworked in the ENTITIES rule, TxInfo translation for protocol version 4 was implemented, and Leios protocol parameters landed in the Dijkstra era. Hydra closed a fanout wedge that could leave a head stuck after a partial withdrawal, stabilized broadcast connections under heavy load, and completed the Performance milestone.</p>
+<div style="text-align:right"><p><a href="https://www.essentialcardano.io/development-update/weekly-development-report-2026-09-18" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="weekly development report banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-55ac2e938acb7dd8290283fb2f2a311b.png" width="1008" height="540" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Input Output Global</name>
+            <uri>https://iohk.io</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Plutus moves to Midgard Labs]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-17-plutus-midgard-labs/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-17-plutus-midgard-labs/"/>
+        <updated>2026-09-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Plutus moves from IO Labs to Midgard Labs, which already audits and writes Plutus smart contracts and contributes to Plutarch and Aiken tooling.]]></summary>
+        <content type="html"><![CDATA[<p>Plutus moves from IO Labs to Midgard Labs, joining Se7en Labs, Teragone, ICAN Group, and BlockPQR as specialist teams maintaining core Cardano functions. Midgard Labs already audits and writes Plutus smart contracts, contributes to the Plutarch and Aiken ecosystems, and its CEO helped bring Plutus tooling into the Plutus Pioneer Program. The transition is coordinated openly through Intersect.</p>
+<div style="text-align:right"><p><a href="https://www.iog.io/news/plutus-moves-to-midgard-labs" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="plutus midgard labs banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-4282c6e3d87536b147d65d803f0984cd.png" width="960" height="544" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Input Output Global</name>
+            <uri>https://iohk.io</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[TOKEN2049 Origins Hackathon opens as Constitutional Amendment Portal advances seven proposals]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-16-community-digest/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-16-community-digest/"/>
+        <updated>2026-09-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TOKEN2049 Origins Hackathon opens for applications, the Constitutional Amendment Portal advances seven proposals, and Intersect Board Elections opens voting.]]></summary>
+        <content type="html"><![CDATA[<p>The TOKEN2049 Origins Hackathon called for builders to create AI agent payment solutions on Cardano using x402, with 200 free spots and $27,500 in prizes. The Constitutional Amendment Portal opened seven proposals to community consultation, Intersect Board Elections opened voting for eleven candidates across two seats, and the SDG Blockchain Accelerator opened applications for up to four equity-free funded teams.</p>
+<div style="text-align:right"><p><a href="https://forum.cardano.org/t/digest-september-16-2026-token2049-origins-hackathon-constitutional-amendment-portal-intersect-board-elections-2026-sdg-blockchain-accelerator-ambassador-stories-baudouin-kakule-muvunga/156830" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="community digest banner" src="https://thenic95.github.io/cardano-org/assets/images/community-digest-7a0718866ed7c240e0b1bdd3fd57fce1.png" width="1600" height="900" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Cardano Community</name>
+            <uri>https://www.youtube.com/c/CardanoCommunity</uri>
+        </author>
+        <category label="Community" term="Community"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dijkstra node 11.1.1 pre-releases as GovTool finds new maintainer]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-11-intersect-weekly-update/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-11-intersect-weekly-update/"/>
+        <updated>2026-09-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Intersect pre-released cardano-node 11.1.1, GovTool found a new maintainer in Sireto, and the Board Election confirmed eleven candidates for two seats.]]></summary>
+        <content type="html"><![CDATA[<p>Intersect pre-released cardano-node 11.1.1 with Dijkstra preparations advancing across the ecosystem, including a readiness tracker and upcoming DijkstraNet testnet. GovTool found a new maintainer in Sireto, led by original builder Sandip Pandey, ensuring the governance tool stays open source and actively maintained. The Board Election confirmed eleven candidates for two member-elected seats, and the newly enacted Constitutional Committee began its term.</p>
+<div style="text-align:right"><p><a href="https://www.intersectmbo.org/news/intersect-weekly-update-128-sep-11-2026" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="intersect weekly update banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-ee753b9085502a1064ce92e42e889328.png" width="1920" height="1080" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Intersect</name>
+            <uri>https://www.intersectmbo.org</uri>
+        </author>
+        <category label="Governance" term="Governance"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Leios improves downloads and caching as Plutus merges casing on Data]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-11-weekly-development-report/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-11-weekly-development-report/"/>
+        <updated>2026-09-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Leios download logic now bounds time and memory, adds a transaction cache, fixes node disconnects, and caps mempool ledger reads, while Plutus merges casing on Data and Hydra patches a critical security flaw.]]></summary>
+        <content type="html"><![CDATA[<p>The Leios download logic was rewritten to bound time and memory, a transaction cache was added, unwanted node disconnects were fixed, and mempool ledger reads were capped, while ledger state garbage collection was threaded. Plutus merged casing on Data, advanced the keepPolicies and dropPolicies built-ins for the future Dijkstra era, and released Plu-tan 1.0, the static analyzer for Plutus scripts. Hydra shipped 2.4.1, a security release removing an optimized transaction-validation path that could let a malicious participant get invalid transactions into confirmed snapshots.</p>
+<div style="text-align:right"><p><a href="https://www.essentialcardano.io/development-update/weekly-development-report-as-of-2026-09-11" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="weekly development report banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-5b8a41131b463bf8fc5b53b6842eee02.jpg" width="1428" height="758" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Input Output Global</name>
+            <uri>https://iohk.io</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dijkstra roadmap details hard fork windows as CC update ratifies]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-05-intersect-weekly-update/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-05-intersect-weekly-update/"/>
+        <updated>2026-09-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Intersect detailed the Dijkstra era node roadmap with hard fork enactment windows, the Constitutional Committee update ratified, and the Board Election applications opened.]]></summary>
+        <content type="html"><![CDATA[<p>Intersect detailed the Dijkstra era node roadmap, placing potential hard fork enactment between December 5 and January 4 with a high-confidence window from February 24 to March 26. The Constitutional Committee update ratified with 71.95% DRep and 56.54% SPO support, and the newly elected committee takes seats without a gap in oversight. The Board Election opened applications for two member-elected seats, and the Constitutional Amendment Portal added threaded discussions, a drafts area, and co-author crediting.</p>
+<div style="text-align:right"><p><a href="https://www.intersectmbo.org/news/intersect-weekly-update-127-sep-5-2026" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="intersect weekly update banner" src="https://thenic95.github.io/cardano-org/assets/images/banner-54fa04b116ddceb1071a1cfc95024854.jpg" width="1920" height="1080" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Intersect</name>
+            <uri>https://www.intersectmbo.org</uri>
+        </author>
+        <category label="Governance" term="Governance"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Node v11.1.0 benchmarks and Hydra formalized in Agda]]></title>
+        <id>https://thenic95.github.io/cardano-org/news/2026-09-04-weekly-development-report/</id>
+        <link href="https://thenic95.github.io/cardano-org/news/2026-09-04-weekly-development-report/"/>
+        <updated>2026-09-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Benchmarks of Cardano node v.11.1.0 showed lower CPU usage, Hydra formalized its specification in Agda, and research held a data availability workshop.]]></summary>
+        <content type="html"><![CDATA[<p>Benchmarks of Cardano node v.11.1.0 showed reduced CPU usage alongside a memory increase that is being addressed in the v.11.1.1 patch release. The Hydra team moved its specification to Typst, formalized it in Agda, and published native Linux ARM64 node images alongside AMD64, with faster Blockfrost query caching. The research team held its second Cardano Vision 26 workshop, covering data availability requirements and specifications.</p>
+<div style="text-align:right"><p><a href="https://www.essentialcardano.io/development-update/weekly-development-report-as-of-2026-09-04" target="_blank" rel="noopener noreferrer" class=""><strong>Read more</strong></a></p></div>
+<p><img decoding="async" loading="lazy" alt="Weekly Development Report" src="https://thenic95.github.io/cardano-org/assets/images/banner-63fa67d5c640f8fce669a3c498cabceb.webp" width="1431" height="760" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Input Output Global</name>
+            <uri>https://iohk.io</uri>
+        </author>
+        <category label="Development" term="Development"/>
+    </entry>
+</feed>

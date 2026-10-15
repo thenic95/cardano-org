@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website||=[]).push([[85790],{34790(e){e.exports=JSON.parse('{"name":"apps-routes","id":"default"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website||=[]).push([[24708],{2166(s){s.exports=JSON.parse('{"name":"glossary-routes","id":"default"}')}}]);

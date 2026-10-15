@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <g fill="#FF5553">
+    <circle cx="15" cy="15" r="2.5"/>
+    <circle cx="25" cy="15" r="2.5"/>
+    <circle cx="95" cy="15" r="2.5"/>
+    <circle cx="105" cy="15" r="2.5"/>
+    <circle cx="15" cy="25" r="2.5"/>
+    <circle cx="25" cy="25" r="2.5"/>
+    <circle cx="75" cy="25" r="2.5"/>
+    <circle cx="95" cy="25" r="2.5"/>
+    <circle cx="105" cy="25" r="2.5"/>
+    <circle cx="15" cy="35" r="2.5"/>
+    <circle cx="95" cy="35" r="2.5"/>
+    <circle cx="105" cy="35" r="2.5"/>
+    <circle cx="15" cy="45" r="2.5"/>
+    <circle cx="35" cy="45" r="2.5"/>
+    <circle cx="45" cy="45" r="2.5"/>
+    <circle cx="95" cy="45" r="2.5"/>
+    <circle cx="105" cy="45" r="2.5"/>
+    <circle cx="15" cy="55" r="2.5"/>
+    <circle cx="35" cy="55" r="2.5"/>
+    <circle cx="45" cy="55" r="2.5"/>
+    <circle cx="55" cy="55" r="2.5"/>
+    <circle cx="105" cy="55" r="2.5"/>
+    <circle cx="15" cy="65" r="2.5"/>
+    <circle cx="35" cy="65" r="2.5"/>
+    <circle cx="45" cy="65" r="2.5"/>
+    <circle cx="55" cy="65" r="2.5"/>
+    <circle cx="75" cy="65" r="2.5"/>
+    <circle cx="85" cy="65" r="2.5"/>
+    <circle cx="105" cy="65" r="2.5"/>
+    <circle cx="15" cy="75" r="2.5"/>
+    <circle cx="45" cy="75" r="2.5"/>
+    <circle cx="65" cy="75" r="2.5"/>
+    <circle cx="75" cy="75" r="2.5"/>
+    <circle cx="85" cy="75" r="2.5"/>
+    <circle cx="105" cy="75" r="2.5"/>
+    <circle cx="15" cy="85" r="2.5"/>
+    <circle cx="35" cy="85" r="2.5"/>
+    <circle cx="55" cy="85" r="2.5"/>
+    <circle cx="65" cy="85" r="2.5"/>
+    <circle cx="75" cy="85" r="2.5"/>
+    <circle cx="85" cy="85" r="2.5"/>
+    <circle cx="105" cy="85" r="2.5"/>
+    <circle cx="15" cy="95" r="2.5"/>
+    <circle cx="105" cy="95" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#0033AD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="25,95 25,35 45,35 65,55 95,55 95,95"/>
+    <polyline points="35,35 35,15 85,15 85,55"/>
+    <line x1="55" y1="35" x2="75.22" y2="35"/>
+    <line x1="44.82" y1="25" x2="65" y2="25"/>
+    <line x1="64.32" y1="45" x2="75.22" y2="45"/>
+    <polyline points="35,75 45,85 65,65"/>
+  </g>
+</svg>

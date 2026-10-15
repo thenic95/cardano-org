@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <g fill="#FF5553">
+    <circle cx="75" cy="15" r="2.5"/>
+    <circle cx="85" cy="15" r="2.5"/>
+    <circle cx="95" cy="15" r="2.5"/>
+    <circle cx="105" cy="15" r="2.5"/>
+    <circle cx="25" cy="25" r="2.5"/>
+    <circle cx="35" cy="25" r="2.5"/>
+    <circle cx="45" cy="25" r="2.5"/>
+    <circle cx="55" cy="25" r="2.5"/>
+    <circle cx="105" cy="25" r="2.5"/>
+    <circle cx="25" cy="35" r="2.5"/>
+    <circle cx="35" cy="35" r="2.5"/>
+    <circle cx="45" cy="35" r="2.5"/>
+    <circle cx="55" cy="35" r="2.5"/>
+    <circle cx="75" cy="35" r="2.5"/>
+    <circle cx="75" cy="45" r="2.5"/>
+    <circle cx="85" cy="45" r="2.5"/>
+    <circle cx="105" cy="45" r="2.5"/>
+    <circle cx="15" cy="55" r="2.5"/>
+    <circle cx="25" cy="55" r="2.5"/>
+    <circle cx="15" cy="65" r="2.5"/>
+    <circle cx="35" cy="65" r="2.5"/>
+    <circle cx="45" cy="65" r="2.5"/>
+    <circle cx="65" cy="65" r="2.5"/>
+    <circle cx="75" cy="65" r="2.5"/>
+    <circle cx="85" cy="65" r="2.5"/>
+    <circle cx="95" cy="65" r="2.5"/>
+    <circle cx="45" cy="75" r="2.5"/>
+    <circle cx="65" cy="75" r="2.5"/>
+    <circle cx="75" cy="75" r="2.5"/>
+    <circle cx="85" cy="75" r="2.5"/>
+    <circle cx="95" cy="75" r="2.5"/>
+    <circle cx="15" cy="85" r="2.5"/>
+    <circle cx="15" cy="95" r="2.5"/>
+    <circle cx="25" cy="95" r="2.5"/>
+    <circle cx="35" cy="95" r="2.5"/>
+    <circle cx="45" cy="95" r="2.5"/>
+    <circle cx="55" cy="95" r="2.5"/>
+    <circle cx="65" cy="95" r="2.5"/>
+    <circle cx="95" cy="95" r="2.5"/>
+    <circle cx="105" cy="95" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#0033AD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="75,25 95,25 95,45"/>
+    <polyline points="85,35 95,45 105,35"/>
+    <rect x="35" y="45" width="10.33" height="10"/>
+    <polyline points="15,75 25,65 25,85 45.33,85"/>
+    <line x1="35" y1="75" x2="25" y2="65"/>
+    <rect x="55" y="55" width="50" height="30"/>
+    <rect x="75" y="85" width="10" height="10"/>
+    <rect x="15" y="15" width="50" height="30"/>
+  </g>
+</svg>

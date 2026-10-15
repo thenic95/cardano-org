@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website||=[]).push([[81903],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/cardano-org/news","blogTitle":"Cardano News","authorsListPath":"/cardano-org/news/authors"}')}}]);

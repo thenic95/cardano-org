@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <g fill="#FF5553">
+    <circle cx="15" cy="15" r="2.5"/>
+    <circle cx="25" cy="15" r="2.5"/>
+    <circle cx="35" cy="15" r="2.5"/>
+    <circle cx="45" cy="15" r="2.5"/>
+    <circle cx="55" cy="15" r="2.5"/>
+    <circle cx="65" cy="15" r="2.5"/>
+    <circle cx="75" cy="15" r="2.5"/>
+    <circle cx="85" cy="15" r="2.5"/>
+    <circle cx="95" cy="15" r="2.5"/>
+    <circle cx="105" cy="15" r="2.5"/>
+    <circle cx="105" cy="25" r="2.5"/>
+    <circle cx="25" cy="35" r="2.5"/>
+    <circle cx="45" cy="35" r="2.5"/>
+    <circle cx="55" cy="35" r="2.5"/>
+    <circle cx="65" cy="35" r="2.5"/>
+    <circle cx="75" cy="35" r="2.5"/>
+    <circle cx="85" cy="35" r="2.5"/>
+    <circle cx="105" cy="35" r="2.5"/>
+    <circle cx="55" cy="45" r="2.5"/>
+    <circle cx="45" cy="55" r="2.5"/>
+    <circle cx="85" cy="55" r="2.5"/>
+    <circle cx="35" cy="65" r="2.5"/>
+    <circle cx="45" cy="65" r="2.5"/>
+    <circle cx="55" cy="65" r="2.5"/>
+    <circle cx="25" cy="75" r="2.5"/>
+    <circle cx="65" cy="75" r="2.5"/>
+    <circle cx="75" cy="75" r="2.5"/>
+    <circle cx="85" cy="75" r="2.5"/>
+    <circle cx="105" cy="75" r="2.5"/>
+    <circle cx="105" cy="85" r="2.5"/>
+    <circle cx="15" cy="95" r="2.5"/>
+    <circle cx="25" cy="95" r="2.5"/>
+    <circle cx="35" cy="95" r="2.5"/>
+    <circle cx="45" cy="95" r="2.5"/>
+    <circle cx="55" cy="95" r="2.5"/>
+    <circle cx="65" cy="95" r="2.5"/>
+    <circle cx="75" cy="95" r="2.5"/>
+    <circle cx="85" cy="95" r="2.5"/>
+    <circle cx="95" cy="95" r="2.5"/>
+    <circle cx="105" cy="95" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#0033AD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="15,85 15,25 95,25 95,45 105,45 105,65 95,65 95.09,85"/>
+    <rect x="75" y="45" width="30" height="20"/>
+    <polygon points="45,75 55,75 65.54,64.6 65,55 65,45 55.16,55.62 45,45 35,35 35.06,45 35.01,55.62 24.78,45 24.78,65 34.38,75"/>
+  </g>
+  <g fill="#0033AD">
+    <circle cx="95" cy="55" r="2.5"/>
+  </g>
+</svg>

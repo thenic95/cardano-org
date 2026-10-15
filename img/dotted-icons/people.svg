@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <g fill="#FF5553">
+    <circle cx="45" cy="15" r="2.5"/>
+    <circle cx="55" cy="15" r="2.5"/>
+    <circle cx="65" cy="15" r="2.5"/>
+    <circle cx="75" cy="15" r="2.5"/>
+    <circle cx="85" cy="15" r="2.5"/>
+    <circle cx="95" cy="15" r="2.5"/>
+    <circle cx="105" cy="15" r="2.5"/>
+    <circle cx="25" cy="25" r="2.5"/>
+    <circle cx="75" cy="25" r="2.5"/>
+    <circle cx="85" cy="25" r="2.5"/>
+    <circle cx="95" cy="25" r="2.5"/>
+    <circle cx="105" cy="25" r="2.5"/>
+    <circle cx="45" cy="35" r="2.5"/>
+    <circle cx="55" cy="35" r="2.5"/>
+    <circle cx="95" cy="35" r="2.5"/>
+    <circle cx="105" cy="35" r="2.5"/>
+    <circle cx="75" cy="45" r="2.5"/>
+    <circle cx="95" cy="45" r="2.5"/>
+    <circle cx="105" cy="45" r="2.5"/>
+    <circle cx="95" cy="55" r="2.5"/>
+    <circle cx="105" cy="55" r="2.5"/>
+    <circle cx="35" cy="75" r="2.5"/>
+    <circle cx="15" cy="85" r="2.5"/>
+    <circle cx="95" cy="85" r="2.5"/>
+    <circle cx="105" cy="85" r="2.5"/>
+    <circle cx="15" cy="95" r="2.5"/>
+    <circle cx="25" cy="95" r="2.5"/>
+    <circle cx="35" cy="95" r="2.5"/>
+    <circle cx="45" cy="95" r="2.5"/>
+    <circle cx="95" cy="95" r="2.5"/>
+    <circle cx="105" cy="95" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#0033AD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="15" y="15" width="20" height="20"/>
+    <polyline points="35,25 65,25 65,35"/>
+    <rect x="65" y="35" width="20" height="20"/>
+    <rect x="15" y="45" width="40" height="10"/>
+    <polyline points="15,55 15,75 25,75"/>
+    <rect x="25" y="65" width="20" height="20"/>
+    <line x1="75" y1="55" x2="75" y2="65"/>
+    <rect x="55" y="65" width="50" height="10"/>
+    <line x1="65" y1="75" x2="65" y2="85"/>
+    <rect x="55" y="85" width="30" height="10"/>
+  </g>
+</svg>

@@ -1,0 +1,597 @@
+# Cardano apps catalog
+
+A curated list of applications running on Cardano mainnet.
+Canonical source: https://cardano.org/apps
+Generated: 2026-10-15
+App count: 103
+
+## Apps
+
+### Open DJED
+URL: https://djed.artifi.finance/
+Source: https://github.com/artifi-labs/open-djed
+Category: other
+Properties: opensource
+Mint and burn DJED, Cardano's overcollateralized stablecoin, on an open-source platform. Transparent alternative to DJED.xyz built by Artifi Labs.
+
+### Cardano Wall
+URL: https://cardanowall.com
+Category: notary
+Demonstrates use cases for Cardano transaction metadata. Sign messages, anchor files as proof of existence, and verify them on-chain.
+
+### NMKR (Maintainer pick)
+URL: https://www.nmkr.io/
+Category: minting
+Properties: nft
+NFT minting, fiat and crypto sales, token launches, and secondary markets — full launchpad stack delivered through a single API.
+
+### AdaStat (Maintainer pick)
+URL: https://adastat.net
+Category: explorer
+Cardano explorer with deep statistics and insights covering blocks, transactions, addresses, stake pools, and protocol parameters.
+
+### Cardano Explorer Index
+URL: https://explorer.cardano.org
+Source: https://github.com/cardano-foundation/cf-explorer-landing
+Category: explorer
+Properties: opensource
+Community-curated index of Cardano block explorers, pool tools, and analytics dashboards built and maintained by the community.
+
+### CExplorer
+URL: https://cexplorer.io/
+Category: explorer
+Properties: pooldelegation
+Independent Cardano explorer with all-in-one dashboards covering blocks, transactions, stake pools, governance, and asset statistics.
+
+### Cardano Scan
+URL: https://cardanoscan.io/
+Category: explorer
+Properties: pooldelegation
+Block explorer and pool tool from the makers of Typhon, with its own indexing stack providing fast access to the full Cardano ledger.
+
+### Pool PM
+URL: https://pool.pm
+Category: explorer
+Cardano block explorer that visualizes transactions as interactive UTXO graphs, making asset flows and stake operations easy to follow.
+
+### PoolTool (Maintainer pick)
+URL: https://pooltool.io
+Category: pooltool
+Feature-rich, unbiased Cardano pool tool with delegation analytics, missed-block detection, and a companion native mobile app.
+
+### AdaLite
+URL: https://adalite.io
+Category: wallet
+AdaLite was developed by vacuumlabs, they were also responsible for the Cardano Ledger app and won the crypto puzzle at the IOHK Summit 2019.
+
+### Atomic Wallet
+URL: https://atomicwallet.io
+Category: wallet
+Properties: mobile
+Multi-cryptocurrency wallet that supports Cardano. During the integration they contributed code to the Cardano Rust library.
+
+### Daedalus
+URL: https://daedaluswallet.io
+Source: https://github.com/input-output-hk/daedalus
+Category: wallet
+Properties: opensource
+Full-node Cardano wallet developed by IOG, one of the three organizations that launched Cardano. Validates the chain locally rather than trusting third parties.
+
+### Cardano Updates (Maintainer pick)
+URL: https://cardanoupdates.com
+Category: analytics
+Tracks Cardano development progress in real time, surfacing pull-request activity and release status without needing to dig through GitHub.
+
+### Pool Stats
+URL: https://poolstats.io
+Category: pooltool
+Properties: pooldelegation
+Cardano stake-pool monitoring with heat-map visualizations of performance, saturation, and rewards across the entire pool universe.
+
+### NOWPayments
+URL: https://nowpayments.io
+Category: other
+Payment gateway that lets merchants and creators accept ada and other cryptocurrencies for sales, subscriptions, and donations.
+
+### Gimbalabs (Maintainer pick)
+URL: https://gimbalabs.com
+Source: https://gitlab.com/gimbalabs
+Category: education
+Properties: opensource
+Collaborative community and space where dApps and open-source tools are developed in the Playground project-based learning experience on Cardano.
+
+### Eternl (Maintainer pick)
+URL: https://eternl.io
+Category: wallet
+Properties: nft, mobile
+Feature-rich Cardano light wallet for browser and mobile. Favored by experienced users for power features the community has requested most.
+
+### cardano-tools.io
+URL: https://cardano-tools.io
+Source: https://github.com/wutzebaer/cardano-tools
+Category: minting
+Properties: nft, opensource
+Open-source CNFT minting toolkit. Configure metadata, royalties, and minting policies entirely client-side; you only pay network fees.
+
+### Typhon (Maintainer pick)
+URL: https://typhonwallet.io
+Category: wallet
+Properties: nft
+Light wallet from the creators of cardanoscan.io. It comes with features like NFT gallery, transaction metadata, vote registration, among other features.
+
+### MuesliSwap
+URL: https://muesliswap.com/
+Category: dex
+Order-book DEX with limit orders and matching running natively on Cardano, also operating on Smart Bitcoin Cash for cross-chain orders.
+
+### SundaeSwap
+URL: https://app.sundae.fi
+Category: dex
+Native, scalable Cardano AMM DEX with automated liquidity provision, yield farming, and an order-book overlay built on Plutus.
+
+### DripDropz (Maintainer pick)
+URL: https://dripdropz.io
+Category: distribution
+We provide token dispensing services to the Cardano community. An intuitive platform that offers projects a comprehensive selection of distribution parameters.
+
+### Minswap (Maintainer pick)
+URL: https://minswap.org
+Category: dex
+Multi-pool decentralized exchange on Cardano with deep liquidity, yield farming, and one of the highest-volume venues for native token swaps.
+
+### GameChanger Wallet
+URL: https://gamechanger.finance
+Category: wallet
+Properties: nft
+The ultimate wallet experience for the Web, with native NFT and token features, powered by Cardano and third party applications.
+
+### GeroWallet
+URL: https://gerowallet.io
+Category: wallet
+Start exploring the possibilities of Cardano. Purchase, send, and receive ADA - the cryptocurrency for Cardano. Available as a browser extension.
+
+### Built on Cardano
+URL: https://builtoncardano.com
+Category: ecosystem
+Discovery directory for projects, dApps, and developer tools on Cardano. Browse by category, find similar projects, and navigate the ecosystem easily.
+
+### CardanoCube (Maintainer pick)
+URL: https://www.cardanocube.com/
+Category: ecosystem
+Curated directory of 650+ projects building on Cardano, organized by category with filters for DeFi, NFTs, governance, infrastructure, and more.
+
+### WingRiders
+URL: https://www.wingriders.com
+Category: dex
+Native AMM DEX on Cardano focused on fast settlement and predictable fees, with stableswap pools and an integrated yield-farming layer.
+
+### Lido Nation
+URL: https://www.lidonation.com/en/catalyst-explorer
+Category: ecosystem
+Aggregator for Project Catalyst that surfaces proposals, voting results, community feedback, and DRep activity in a single dashboard.
+
+### eUTxO
+URL: https://eutxo.org
+Category: explorer
+Visual Cardano blockchain explorer that maps transactions, datums, and assets across the eUTXO model into interactive graphs.
+
+### Vibrant
+URL: https://www.vibrantnet.io
+Source: https://github.com/nilscodes/hazelnet
+Category: other
+Properties: nft, opensource
+Community integration tool for stake-pool operators and NFT projects to verify delegators and holders, run polls, and manage whitelists via Discord.
+
+### Book.io
+URL: https://book.io
+Category: marketplace
+Properties: nft
+NFT marketplace where readers buy, read, and resell eBooks and audiobooks. Each title is an asset with verifiable provenance and resale rights.
+
+### NuFi Wallet
+URL: https://nu.fi
+Category: wallet
+Properties: nft
+Non-custodial multi-chain wallet supporting Cardano alongside other major networks, with an in-app DEX for swaps without leaving the wallet.
+
+### CNFTLab Party
+URL: https://www.cnftlab.party/
+Category: minting
+Properties: nft
+CNFT minting platform with policy ID management, on-chain royalty configuration, and bulk minting workflows ready in minutes.
+
+### Dune
+URL: https://dune.com/browse/dashboards?q=cardano
+Category: analytics
+Dune is a powerful tool for blockchain research, providing instant on-chain data analysis and community-driven dashboards for the Cardano ecosystem.
+
+### Chainport
+URL: https://www.chainport.io/
+Category: bridge
+Audited blockchain bridge connecting EVM chains to Cardano with a single-click experience, smart-contract attestations, and ported asset tracking.
+
+### Cardano Studio
+URL: https://cardano-studio.app
+Category: minting
+Properties: nft
+Mint NFTs on Cardano fully in your browser. Keys, metadata, and policy IDs stay on your device — no third party touches the minting flow.
+
+### Finitum Bridge
+URL: https://finitum.io/bridge
+Category: bridge
+Cross-chain bridge for moving supported tokens between Cardano and BSC. Wraps assets on the destination chain with custodian-backed reserves.
+
+### BALANCE Analytics
+URL: https://www.balanceanalytics.io/
+Category: analytics
+Graphical, configurable analytics dashboards specialising in Cardano PoS decentralization metrics, stake distribution, and network health signals.
+
+### adahandle
+URL: https://handle.me/
+Category: identity
+Properties: nft
+Standardized NFT that maps a Cardano wallet address to a human-readable handle. Used by wallets and dApps as the network's de facto naming layer.
+
+### Lace (Maintainer pick)
+URL: https://www.lace.io/
+Source: https://github.com/input-output-hk/lace
+Category: wallet
+Properties: nft, opensource, mobile
+Light wallet platform from IOG, audited by an independent reviewer. Lace lets you manage your digital assets and connect to Web3 dApps on Cardano.
+
+### Continuity Token
+URL: https://continuity.to/
+Category: notary
+Properties: nft
+Provides secure, long-term cold-storage backups of Cardano NFT media so collections survive even if the original IPFS or Arweave host disappears.
+
+### VESPR (Maintainer pick)
+URL: https://www.vespr.xyz/#/
+Category: wallet
+Properties: nft, mobile
+Non-custodial mobile wallet for Cardano. Designed for newcomers with simple onboarding, friendly defaults, and security that keeps private keys on-device.
+
+### DexHunter
+URL: https://www.dexhunter.io/
+Category: dex
+Cardano DEX aggregator that routes trades across all major venues for competitive pricing, with real-time alerts and a unified interface.
+
+### Liqwid (Maintainer pick)
+URL: https://app.liqwid.finance
+Source: https://github.com/liqwid-labs
+Category: lending
+Properties: opensource
+Non-custodial pooled lending protocol on Cardano with liquid staking, supporting multiple supplied assets and qToken collateral receipts.
+
+### Cardano Academy (Maintainer pick)
+URL: https://cardanofoundation.org/en/academy
+Category: education
+Online courses on blockchain fundamentals, consensus algorithms, transaction models, scaling, and Cardano governance, staking, and dApp development.
+
+### Cardano Governance Tool
+URL: https://gov.tools
+Category: governance
+Properties: drepdelegation
+A collection of tools to delegate voting power, become a DRep, become a direct voter, browse or proposa a governance actions on Cardano blockchain.
+
+### Treasury Donation
+URL: https://cardano.org/governance/treasury#donate
+Category: governance
+Connect a CIP-30 wallet and donate ada directly to the Cardano treasury in a single, non-custodial transaction. Hosted on cardano.org.
+
+### Cardano GovScope
+URL: https://cardanogovscope.com/
+Category: governance
+Cardano governance dashboard with donut charts and tables that visualize vote distribution, DRep concentration, and governance action outcomes.
+
+### Medusa Wallet
+URL: https://adawallet.io
+Category: wallet
+A lightweight Cardano wallet focused on privacy and user protection, enabling easy and secure access to funds even in untrusted or compromised environments.
+
+### Dano Finance
+URL: https://dano.finance/
+Category: lending
+All-in-one DeFi platform on Cardano combining lending, borrowing, and trading with cross-pool collateral and unified interest rate markets.
+
+### Multisig Wallet (Maintainer pick)
+URL: https://multisig.meshjs.dev/features
+Category: wallet
+Secure team treasury management and governance participation on Cardano using native multi-signature scripts and an approval workflow UI.
+
+### Tempo
+URL: https://tempo.vote
+Category: governance
+Properties: drepdelegation
+Governance tool that streamlines Cardano's decision making. Helps DReps register, gain delegations, and engage delegators; supports DAOs and SPOs too.
+
+### Begin Wallet
+URL: https://begin.is
+Category: wallet
+Properties: nft, mobile
+Non-custodial Cardano wallet for browser and mobile with payment links, deep-link support, Begin ID usernames (ENS-style), and Ledger and Keystone hardware support.
+
+### Onboard Ninja
+URL: https://onboard.ninja
+Category: distribution
+Properties: nft
+Lets Cardano creators distribute airdrops at in-person events. Attendees scan a code, claim tokens to their wallet, and walk away onboarded.
+
+### Stuff.io
+URL: https://stuff.io
+Category: marketplace
+Digital-ownership platform on Cardano letting consumers own, share, gift, or resell their movies, music, ebooks, audiobooks, and podcasts as NFTs.
+
+### Veridian Wallet
+URL: https://www.veridian.id/
+Source: https://github.com/veridian-id/veridian-wallet
+Category: identity
+Properties: opensource
+Manages identity across platforms using decentralized public key infrastructure and verifiable credentials. Built on KERI, optionally anchored to Cardano.
+
+### Governance Space
+URL: https://governancespace.com/
+Category: governance
+Blockchain governance platform for DAOs, projects, and institutions, providing indexing and analytics for DReps, governance actions, and committee work.
+
+### Adastack.io
+URL: https://www.adastack.io
+Category: ecosystem
+Comprehensive Cardano ecosystem explorer: Explore intro guides, wallets, DApps, NFTs, games, governance, Project Catalyst, DAOs, development, sidechains, L2s and more.
+
+### ADAM Cardano App
+URL: https://androdevs.de
+Category: other
+Properties: nft
+Mobile app (iOS and Android) for tracking your Cardano wallets, staking rewards, and funds in one cohesive interface, with price widgets and insights.
+
+### Governance Voting Tool
+URL: https://voting.cardanofoundation.org/
+Source: https://github.com/cardano-foundation/cardano-governance-voting-tool
+Category: governance
+Properties: opensource
+Simple voting tool for Cardano stakeholders to participate in on-chain governance with clear ballot UI, DRep info, and action explanations.
+
+### Andamio
+URL: https://www.andamio.io/
+Category: identity
+Verified trust protocol for distributed work on Cardano. Organizations mint credentials and find contributors; individuals learn, join, and launch projects.
+
+### CSWAP
+URL: https://www.cswap.fi/
+Category: dex
+CSWAP Systems is a next-gen decentralized exchange (DEX) that bridges tokens, NFTs, and real-world assets in one seamless trading ecosystem.
+
+### FluidTokens
+URL: https://fluidtokens.com/
+Source: https://github.com/fluidtokens
+Category: lending
+Properties: opensource
+Cardano-Bitcoin DeFi protocol covering lending, borrowing, staking, sponsored transactions, rental positions, and boosted-stake products.
+
+### Iagon
+URL: https://iagon.com
+Category: marketplace
+Iagon is an AI-driven shared storage and compute economy. Bridging decentralization with compliance to revolutionize cloud services.
+
+### VyFinance
+URL: https://vyfi.io
+Category: dex
+Cardano DeFi protocol with a decentralized exchange, redistributive BAR mechanism, governance, lottery, and token and NFT vaults bundled together.
+
+### Splash
+URL: https://www.splash.trade/
+Source: https://github.com/splashprotocol/splash-core
+Category: dex
+Properties: opensource
+Open-source decentralized protocol for efficient market-making and trading on Cardano, with batched settlement and gas-efficient routing.
+
+### Palmyra
+URL: https://palmeconomy.io/
+Source: https://github.com/zenGate-Global/winter-cardano
+Category: marketplace
+Properties: opensource
+Real-world-asset tokenization on Cardano focused on underserved commodities, opening fractional investment access to producers and traders.
+
+### Optim Finance
+URL: https://www.optim.finance/
+Category: lending
+Decentralized yield optimization on Cardano with a suite of vaults that auto-compound staking, lending, and DEX-LP positions to maximize yield.
+
+### Farmroll
+URL: https://farmroll.io/
+Category: other
+Cardano community engagement platform with token-gated rewards, automated participation tracking, and AI-driven campaign tools for projects.
+
+### Empowa
+URL: https://empowa.io/
+Category: marketplace
+Join a RWA project looking to enable 1 million African families to become owners of a climate-smart home across Africa by 2030.
+
+### Strike Finance
+URL: https://www.strikefinance.org/
+Source: https://github.com/strike-finance/perpetuals-smart-contracts
+Category: dex
+Properties: opensource
+DeFi derivatives protocol on Cardano offering perpetual futures with on-chain margin, leverage, and oracle-priced settlement.
+
+### Snek.fun
+URL: https://snek.fun/
+Category: marketplace
+Fair-launch memecoin launchpad on Cardano. Tokens launch in seconds for a flat fee with built-in liquidity protection and no team allocations.
+
+### Xerberus
+URL: https://www.xerberus.io/
+Category: analytics
+Xerberus' Risk Ratings deliver automated, objective, and real-time insights derived from on-chain data, providing investors and dApps with accurate risk assessments.
+
+### Masumi
+URL: https://www.masumi.network
+Source: https://github.com/masumi-network
+Category: marketplace
+Properties: opensource
+Masumi is a decentralized protocol empowering AI agents to collaborate seamlessly and monetize their services efficiently.
+
+### Finest
+URL: https://www.finest.investments/
+Category: marketplace
+Invest in tokenized real-world assets on Cardano. Fully regulated and compliant under European securities frameworks for institutional access.
+
+### Butane
+URL: https://butane.dev/
+Source: https://github.com/butaneprotocol/butane-contracts
+Category: lending
+Properties: opensource
+Decentralized synthetics platform on Cardano enabling on-chain price exposure to off-chain assets via collateralized synthetic positions.
+
+### Bodega Market
+URL: https://v3.bodegamarket.io
+Source: https://github.com/bodega-market/bodega-market-smart-contracts
+Category: marketplace
+Properties: opensource
+Prediction market on Cardano for speculating on real-world event outcomes. Settles outcomes on-chain using oracle data and Plutus smart contracts.
+
+### Infinity Rising
+URL: https://infinityrising.com
+Category: game
+Open-world sandbox MMO and multiverse simulator set between Cornucopias in the sky, the broken Earth below, and worlds beyond. Explore, craft, build, trade.
+
+### Reeve
+URL: https://www.cardanofoundation.org/reeve#mission
+Source: https://github.com/cardano-foundation/cf-reeve-platform
+Category: notary
+Properties: opensource
+Project (also known as Ledger on the Blockchain or LOB) developing a Cardano-based decentralized ledger for digital recording of accounting data.
+
+### Ascent Rivals
+URL: https://www.ascentrivals.com/
+Category: game
+Multiplayer racing-combat game with dual-engine twin-stick controls. Compete in tournaments, place rival contracts, and master risk-reward death racing.
+
+### Asteria
+URL: https://asteria.txpipe.io
+Source: https://github.com/txpipe/asteria
+Category: game
+Properties: opensource
+Fully on-chain strategy game built for developers. Pilot a spaceship across a 2D grid where every entity is a Cardano eUTXO and Plutus contract.
+
+### Ale & Axes (Maintainer pick)
+URL: https://aleaxes.com/
+Category: game
+Mobile and browser fantasy RPG built on Cardano. NFTs unlock in-game perks, advanced tokenomics reward long-term play, and web2 and web3 gamers play together.
+
+### Clarity Protocol
+URL: https://www.clarity.community/
+Category: governance
+Community governance and management toolkit usable by any Cardano project. Provides proposal flows, voting, treasury controls, and member registries.
+
+### Indigo
+URL: https://indigoprotocol.io/
+Source: https://github.com/IndigoProtocol/indigo-upgrade-details-v2
+Category: lending
+Properties: opensource
+Autonomous synthetics protocol on Cardano for on-chain price exposure to real-world assets. Mints iAssets backed by collateralized debt positions.
+
+### Arp Radio
+URL: https://arpradio.media
+Category: other
+Cardano music ecosystem player. Discover, mint, and play CIP-60 music NFT collections in a custom audio player tuned to consensus and slot timing.
+
+### CGOV (Maintainer pick)
+URL: https://app.cgov.io/
+Source: https://github.com/nomos-guild/cgov
+Category: governance
+Properties: opensource
+A governance monitoring dashboard to track and analyze on-chain governance actions, including active, ratified, and expired proposals on the Cardano blockchain.
+
+### Sundae Treasury Dashboard
+URL: https://treasury.sundae.fi/
+Source: https://github.com/SundaeSwap-finance/treasury-contracts
+Category: governance
+Properties: opensource
+A smart contract-based treasury management platform by Sundae Labs for transparent milestone-based fund disbursements from Cardano governance actions.
+
+### Supply Summary
+URL: https://cardano.org/insights/supply/summary/
+Category: governance
+Explore historical trends in Cardano's ada supply distribution, including reserves, rewards, treasury, and deposits across epochs.
+
+### WanBridge
+URL: https://bridge.wanchain.org/AssetBridge
+Category: bridge
+Decentralized cross-chain bridge infrastructure connecting Cardano with multiple EVM and non-EVM networks via threshold-signature relayers.
+
+### UVerify
+URL: https://uverify.io
+Source: https://github.com/UVerify-io
+Category: notary
+Properties: opensource
+Every fingerprint is a fully interactive decentralized app: customziable, shareable, instantly verifiable, and permanent. No blockchain experience required.
+
+### CommitProof
+URL: https://commitproof.com
+Category: notary
+Prove what you knew and when. Hash any file or text locally, then commit the proof to Cardano. Your original never leaves your device. The timestamp is public and verifiable.
+
+### Plutus Quiz V1000
+URL: https://server-tools.grahamsnumberplus1.com/quiz_V1000/quiz-V1000.html
+Category: game
+Free-to-enter knowledge quiz built on Cardano Plutus smart contracts. Players submit encrypted answers on-chain; the highest scorer claims the prize.
+
+### TapDano
+URL: https://tapdano.com
+Category: identity
+Verifiable proof infrastructure combining NFC hardware identity with on-chain records on Cardano. Enables cryptographic proof of attendance and compliance.
+
+### Claimpaign
+URL: https://claimpaign.com
+Category: distribution
+Properties: nft
+Cardano airdrop tool for real-world token distribution. Recipients claim from QR codes instead of receiving wallet pushes, putting them in control (CIP-99).
+
+### Wayup (Maintainer pick)
+URL: https://www.wayup.io
+Category: marketplace
+Properties: nft
+Cardano NFT marketplace by Anvil. Continues the smart contracts of JpgStore as the platform sunsets, so existing listings and royalties keep working.
+
+### Surf Lending
+URL: https://surflending.org
+Category: lending
+Pooled lending protocol with isolated markets, each with its own risk profile, for earning interest and borrowing against Cardano native tokens.
+
+### Hizz
+URL: https://www.hizz.io
+Category: analytics
+Hizz is a live Cardano trading terminal for fast token discovery, AI-powered signals, smart wallet tracking, and seamless trade execution across the Cardano ecosystem.
+
+### Extended UTxO
+URL: https://extendedutxo.com
+Category: education
+An interactive course on Cardano's Extended UTxO model. Work through playgrounds and simulators, then build and validate your own transactions in a sandbox.
+
+### Bending AI
+URL: https://bending.ai
+Category: analytics
+Cardano DeFi analytics platform with AI-powered insights, real-time token and wallet tracking, and on-chain data visualization for traders and investors.
+
+### DRepTalk (Maintainer pick)
+URL: https://dreptalk.com
+Source: https://github.com/katomm/dreptalk.com
+Category: governance
+Properties: opensource, drepdelegation
+Governance tool for Cardano: delegate your voting power to a DRep, register as a DRep, and discuss every on-chain governance action beside live vote data.
+
+### EchoForge
+URL: https://echoforgellc.tech
+Source: https://github.com/EchoForge-Dev/Aiken_Smart-Contract
+Category: notary
+Properties: opensource
+EchoForge is a B2B2C identity and proof layer on Cardano. EchoCert verifies credentials, EchoUploader proves file, EchoID adds wallet identity through EchoDash.
+
+### Adapools
+URL: https://adapools.xyz
+Source: https://github.com/schmidko/adapools
+Category: pooltool
+Properties: opensource
+Adapools is a Cardano stake pool explorer with live block updates, epoch progress, pool metrics, delegation activity, and retirement filings.

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <g fill="#FF5553">
+    <circle cx="15" cy="15" r="2.5"/>
+    <circle cx="95" cy="15" r="2.5"/>
+    <circle cx="105" cy="15" r="2.5"/>
+    <circle cx="15" cy="25" r="2.5"/>
+    <circle cx="105" cy="25" r="2.5"/>
+    <circle cx="15" cy="35" r="2.5"/>
+    <circle cx="45" cy="35" r="2.5"/>
+    <circle cx="55" cy="35" r="2.5"/>
+    <circle cx="65" cy="35" r="2.5"/>
+    <circle cx="75" cy="35" r="2.5"/>
+    <circle cx="105" cy="35" r="2.5"/>
+    <circle cx="15" cy="45" r="2.5"/>
+    <circle cx="45" cy="45" r="2.5"/>
+    <circle cx="65" cy="45" r="2.5"/>
+    <circle cx="85" cy="45" r="2.5"/>
+    <circle cx="105" cy="45" r="2.5"/>
+    <circle cx="15" cy="55" r="2.5"/>
+    <circle cx="45" cy="55" r="2.5"/>
+    <circle cx="55" cy="55" r="2.5"/>
+    <circle cx="75" cy="55" r="2.5"/>
+    <circle cx="85" cy="55" r="2.5"/>
+    <circle cx="105" cy="55" r="2.5"/>
+    <circle cx="15" cy="65" r="2.5"/>
+    <circle cx="105" cy="65" r="2.5"/>
+    <circle cx="15" cy="75" r="2.5"/>
+    <circle cx="105" cy="75" r="2.5"/>
+    <circle cx="15" cy="85" r="2.5"/>
+    <circle cx="25" cy="85" r="2.5"/>
+    <circle cx="105" cy="85" r="2.5"/>
+    <circle cx="15" cy="95" r="2.5"/>
+    <circle cx="25" cy="95" r="2.5"/>
+    <circle cx="105" cy="95" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#0033AD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="35,25 35,95 95,95 95,36.67 95,25"/>
+    <polygon points="25,14.63 25,74.63 35,74.63 35,24.63 85,24.63 85,14.63"/>
+    <line x1="65" y1="75" x2="85" y2="75"/>
+    <line x1="45" y1="75" x2="55" y2="75"/>
+    <polyline points="54.81,45 65,55.15 85.66,34.66"/>
+  </g>
+  <g fill="#0033AD" fill-rule="evenodd">
+    <path d="M85,87.5H45c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5h40c1.38,0,2.5,1.12,2.5,2.5S86.38,87.5,85,87.5z"/>
+    <path d="M85,67.57H45c-1.38,0-2.5-1.12-2.5-2.5s1.12-2.5,2.5-2.5h40c1.38,0,2.5,1.12,2.5,2.5S86.38,67.57,85,67.57 z"/>
+  </g>
+</svg>

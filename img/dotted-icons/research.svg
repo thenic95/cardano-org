@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+  <g fill="#FF5553">
+    <circle cx="85" cy="25" r="2.5"/>
+    <circle cx="95" cy="25" r="2.5"/>
+    <circle cx="85" cy="45" r="2.5"/>
+    <circle cx="95" cy="45" r="2.5"/>
+    <circle cx="105" cy="45" r="2.5"/>
+    <circle cx="75" cy="55" r="2.5"/>
+    <circle cx="85" cy="65" r="2.5"/>
+    <circle cx="95" cy="65" r="2.5"/>
+    <circle cx="55" cy="75" r="2.5"/>
+    <circle cx="85" cy="75" r="2.5"/>
+    <circle cx="95" cy="75" r="2.5"/>
+    <circle cx="25" cy="85" r="2.5"/>
+    <circle cx="35" cy="85" r="2.5"/>
+    <circle cx="45" cy="85" r="2.5"/>
+    <circle cx="55" cy="85" r="2.5"/>
+    <circle cx="85" cy="85" r="2.5"/>
+    <circle cx="95" cy="85" r="2.5"/>
+  </g>
+  <g fill="none" stroke="#0033AD" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="15" y="15" width="50" height="80"/>
+    <rect x="25" y="25" width="30" height="10"/>
+    <line x1="25" y1="45" x2="55" y2="45"/>
+    <line x1="25" y1="55" x2="55" y2="55"/>
+    <line x1="25" y1="65" x2="55" y2="65"/>
+    <line x1="25" y1="75" x2="45" y2="75"/>
+    <polygon points="75,15 105,15 105,35 85,35 75,45"/>
+    <polygon points="85,55 105,55 105,95 75,95 75,65"/>
+  </g>
+</svg>
